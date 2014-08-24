@@ -1,4 +1,6 @@
 tip.css
 =======
 
-A powerful CSS3 tooltip library using single HTML element
+A powerful CSS3 tooltip library.
+
+Documentation Coming soon...
