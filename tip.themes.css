@@ -1,0 +1,87 @@
+/*
+ * tip.themes.css - themes for tip.css
+ * @Author Zahin Omar Alwa (https://twitter.com/zahinize)
+ * MIT Licence
+*/
+/*Tip: 3d theme*/
+.tip--3d:before { background: linear-gradient(to bottom, #5c6466 1%, #000 100%) }
+.tip--bottom.tip--3d:after { border-color: transparent transparent #5c6466 }
+.tip--bottom.tip--speech-bubble.tip--3d:after { border-color: transparent transparent #5c6466 #5c6466 }
+.tip--error.tip--3d:before { background: linear-gradient(to bottom, #f41818 1%, #bb3e3e 100%) }
+.tip--bottom.tip--error.tip--3d:after { border-color:transparent transparent #f41818 }
+.tip--bottom.tip--error.tip--speech-bubble.tip--3d:after { border-color: transparent transparent #f41818 #f41818 }
+.tip--warning.tip--3d:before { background: linear-gradient(to bottom, #e2c73f 1%, #cd9239 100%) }
+.tip--bottom.tip--warning.tip--3d:after { border-color:transparent transparent #e2c73f }
+.tip--bottom.tip--warning.tip--speech-bubble.tip--3d:after { border-color: transparent transparent #e2c73f #e2c73f }
+.tip--success.tip--3d:before { background: linear-gradient(to bottom, #8ad337 1%, #248f24 100%) }
+.tip--bottom.tip--success.tip--3d:after { border-color:transparent transparent #8ad337 }
+.tip--bottom.tip--success.tip--speech-bubble.tip--3d:after { border-color: transparent transparent #8ad337 #8ad337 }
+.tip--protip.tip--3d:before { background: linear-gradient(to bottom, #ccac6c 1%, #7e6d42 100%) }
+.tip--bottom.tip--protip.tip--3d:after { border-color:transparent transparent #ccac6c }
+.tip--bottom.tip--protip.tip--speech-bubble.tip--3d:after { border-color: transparent transparent #ccac6c #ccac6c }
+.tip--info.tip--3d:before { background: linear-gradient(to bottom, #00a1c9 1%, #00617f 100%) }
+.tip--bottom.tip--info.tip--3d:after { border-color:transparent transparent #00a1c9 }
+.tip--bottom.tip--info.tip--speech-bubble.tip--3d:after { border-color: transparent transparent #00a1c9 #00a1c9 }
+.tip--peace.tip--3d:before { background: linear-gradient(to bottom, #f4f4f4 1%, #eee 100%) }
+.tip--bottom.tip--peace.tip--3d:after { border-color:transparent transparent #f4f4f4 }
+.tip--bottom.tip--peace.tip--speech-bubble.tip--3d:after { border-color: transparent transparent #f4f4f4 #fcfcfc }
+
+/*Tip: subtle theme*/
+.tip--subtle:before {
+  background: #fcfcfc;
+  box-shadow: 2px 0 0 #ddd inset, -2px 0 0 #ddd inset, 0 3px 0 #ddd inset, 0 -3px 0 #ddd inset;
+  color: #888;
+  text-shadow: 0 2px rgba(255, 255, 255, 0.5) !important
+}
+.tip--top.tip--subtle:after { border-color: #ddd transparent transparent }
+.tip--top.tip--speech-bubble.tip--subtle:after { border-color: #ddd transparent transparent #ddd }
+.tip--bottom.tip--subtle:after { border-color:transparent transparent #ddd }
+.tip--bottom.tip--speech-bubble.tip--subtle:after { border-color: transparent transparent #ddd #ddd }
+.tip--error.tip--subtle:before {
+  background: #ffe4e4;
+  box-shadow: 2px 0 0 #e2afaf inset, -2px 0 0 #e2afaf inset, 0 3px 0 #e2afaf inset, 0 -3px 0 #e2afaf inset
+}
+.tip--top.tip--error.tip--subtle:after { border-color: #e2afaf transparent transparent }
+.tip--top.tip--error.tip--speech-bubble.tip--subtle:after { border-color: #e2afaf transparent transparent #e2afaf }
+.tip--bottom.tip--error.tip--subtle:after { border-color:transparent transparent #e2afaf }
+.tip--bottom.tip--error.tip--speech-bubble.tip--subtle:after { border-color: transparent transparent #e2afaf #e2afaf }
+.tip--warning.tip--subtle:before {
+  background: #fff8d5;
+  box-shadow: 2px 0 0 #f3d09a inset, -2px 0 0 #f3d09a inset, 0 3px 0 #f3d09a inset, 0 -3px 0 #f3d09a inset
+}
+.tip--top.tip--warning.tip--subtle:after { border-color: #f3d09a transparent transparent }
+.tip--top.tip--warning.tip--speech-bubble.tip--subtle:after { border-color: #f3d09a transparent transparent #f3d09a }
+.tip--bottom.tip--warning.tip--subtle:after { border-color:transparent transparent #f3d09a }
+.tip--bottom.tip--warning.tip--speech-bubble.tip--subtle:after { border-color: transparent transparent #f3d09a #f3d09a }
+.tip--success.tip--subtle:before {
+  background: #e7ffcd;
+  box-shadow: 2px 0 0 #a5e0a5 inset, -2px 0 0 #a5e0a5 inset, 0 3px 0 #a5e0a5 inset, 0 -3px 0 #a5e0a5 inset
+}
+.tip--top.tip--success.tip--subtle:after { border-color: #a5e0a5 transparent transparent }
+.tip--top.tip--success.tip--speech-bubble.tip--subtle:after { border-color: #a5e0a5 transparent transparent #a5e0a5 }
+.tip--bottom.tip--success.tip--subtle:after { border-color:transparent transparent #a5e0a5 }
+.tip--bottom.tip--success.tip--speech-bubble.tip--subtle:after { border-color: transparent transparent #a5e0a5 #a5e0a5 }
+.tip--protip.tip--subtle:before {
+  background: #fffec5;
+  box-shadow: 2px 0 0 #dbc899 inset, -2px 0 0 #dbc899 inset, 0 3px 0 #dbc899 inset, 0 -3px 0 #dbc899 inset
+}
+.tip--top.tip--protip.tip--subtle:after { border-color: #dbc899 transparent transparent }
+.tip--top.tip--protip.tip--speech-bubble.tip--subtle:after { border-color: #dbc899 transparent transparent #dbc899 }
+.tip--bottom.tip--protip.tip--subtle:after { border-color:transparent transparent #dbc899 }
+.tip--bottom.tip--protip.tip--speech-bubble.tip--subtle:after { border-color: transparent transparent #dbc899 #dbc899 }
+.tip--info.tip--subtle:before {
+  background: #dbf8ff;
+  box-shadow: 2px 0 0 #97d9ee inset, -2px 0 0 #97d9ee inset, 0 3px 0 #97d9ee inset, 0 -3px 0 #97d9ee inset
+}
+.tip--top.tip--info.tip--subtle:after { border-color: #97d9ee transparent transparent }
+.tip--top.tip--info.tip--speech-bubble.tip--subtle:after { border-color: #97d9ee transparent transparent #97d9ee }
+.tip--bottom.tip--info.tip--subtle:after { border-color:transparent transparent #97d9ee }
+.tip--bottom.tip--info.tip--speech-bubble.tip--subtle:after { border-color: transparent transparent #97d9ee #97d9ee }
+.tip--peace.tip--subtle:before {
+  background: #fff;
+  box-shadow: 2px 0 0 #f1f1f1 inset, -2px 0 0 #f1f1f1 inset, 0 3px 0 #f1f1f1 inset, 0 -3px 0 #f1f1f1 inset
+}
+.tip--top.tip--peace.tip--subtle:after { border-color: #f1f1f1 transparent transparent }
+.tip--top.tip--peace.tip--speech-bubble.tip--subtle:after { border-color: #f1f1f1 transparent transparent #f1f1f1 }
+.tip--bottom.tip--peace.tip--subtle:after { border-color:transparent transparent #f1f1f1 }
+.tip--bottom.tip--peace.tip--speech-bubble.tip--subtle:after { border-color: transparent transparent #f1f1f1 #f1f1f1 }
