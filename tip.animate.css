@@ -1,0 +1,312 @@
+/*
+ * tip.animate.css - animations for tip.css
+ * @Author Zahin Omar Alwa - (https://twitter.com/zahinize)
+ * MIT Licence
+*/
+/*Tip top: out-in keyframes*/
+@keyframes animate-top-before-out-in {
+  0%, 100% { top: -60px }
+  50% { top: -38px }
+}
+@keyframes animate-top-after-out-in {
+  0%, 100% { top: -32px }
+  50% { top: -10px }
+}
+/*Tip top: in-out keyframes*/
+@keyframes animate-top-before-in-out {
+  0%, 100% { top: -38px }
+  50% { top: -50px }
+}
+@keyframes animate-top-after-in-out {
+  0%, 100% { top: -10px }
+  50% { top: -22px }
+}
+/*Tip top: out-in four iteration hiding keyframes*/
+@keyframes animate-top-before-out-in-iterate-four {
+  0%, 25%, 50%, 75% { top: -60px }
+  12.5%, 37.5%, 62.5%, 87.5%  { top: -38px }
+  100% {
+    top: -60px;
+    visibility: hidden
+  }
+}
+@keyframes animate-top-after-out-in-iterate-four {
+  0%, 25%, 50%, 75% { top: -32px }
+  12.5%, 37.5%, 62.5%, 87.5% { top: -10px }
+  100% {
+    top: -32px;
+    visibility: hidden
+  }
+}
+/*Tip top: in-out four iteration hiding keyframes*/
+@keyframes animate-top-before-in-out-iterate-four {
+  0%, 25%, 50%, 75% { top: -38px }
+  12.5%, 37.5%, 62.5%, 87.5%  { top: -50px }
+  100% {
+    top: -38px;
+    visibility: hidden
+  }
+}
+@keyframes animate-top-after-in-out-iterate-four {
+  0%, 25%, 50%, 75% { top: -10px }
+  12.5%, 37.5%, 62.5%, 87.5% { top: -22px }
+  100% {
+    top: -10px;
+    visibility: hidden
+  }
+}
+
+/*Tip bottom: out-in keyframes*/
+@keyframes animate-bottom-before-out-in {
+  0%, 100% { bottom: -60px }
+  50% { bottom: -38px }
+}
+@keyframes animate-bottom-after-out-in {
+  0%, 100% { bottom: -32px }
+  50% { bottom: -10px }
+}
+/*Tip bottom: in-out keyframes*/
+@keyframes animate-bottom-before-in-out {
+  0%, 100% { bottom: -38px }
+  50% { bottom: -50px }
+}
+@keyframes animate-bottom-after-in-out {
+  0%, 100% { bottom: -10px }
+  50% { bottom: -22px }
+}
+/*Tip bottom: out-in four iteration hiding keyframes*/
+@keyframes animate-bottom-before-out-in-iterate-four {
+  0%, 25%, 50%, 75% { bottom: -60px }
+  12.5%, 37.5%, 62.5%, 87.5%  { bottom: -38px }
+  100% {
+    bottom: -60px;
+    visibility: hidden
+  }
+}
+@keyframes animate-bottom-after-out-in-iterate-four {
+  0%, 25%, 50%, 75% { bottom: -32px }
+  12.5%, 37.5%, 62.5%, 87.5% { bottom: -10px }
+  100% {
+    bottom: -32px;
+    visibility: hidden
+  }
+}
+/*Tip bottom: in-out four iteration hiding keyframes*/
+@keyframes animate-bottom-before-in-out-iterate-four {
+  0%, 25%, 50%, 75% { bottom: -38px }
+  12.5%, 37.5%, 62.5%, 87.5%  { bottom: -50px }
+  100% {
+    bottom: -38px;
+    visibility: hidden
+  }
+}
+@keyframes animate-bottom-after-in-out-iterate-four {
+  0%, 25%, 50%, 75% { bottom: -10px }
+  12.5%, 37.5%, 62.5%, 87.5% { bottom: -22px }
+  100% {
+    bottom: -10px;
+    visibility: hidden
+  }
+}
+/*
+ * Tip: top animation rules
+*/
+/*Tip top: out-in four iteration animation with default/ease timing function*/
+.tip.tip--top.tip--static-stay.tip--animate-four:before , .tip.tip--top.tip--static-stay.tip--ease.tip--animate-four:before { animation: animate-top-before-out-in-iterate-four 6.3s 0s 1 ease forwards }
+.tip.tip--top.tip--static-stay.tip--animate-four:after, .tip.tip--top.tip--static-stay.tip--ease.tip--animate-four:after { animation: animate-top-after-out-in-iterate-four 6.3s 0s 1 ease forwards }
+/*Tip top: out-in four iteration animation with linear timing function*/
+.tip.tip--top.tip--static-stay.tip--linear.tip--animate-four:before { animation: animate-top-before-out-in-iterate-four 6.3s 0s 1 linear forwards }
+.tip.tip--top.tip--static-stay.tip--linear.tip--animate-four:after { animation: animate-top-after-out-in-iterate-four 6.3s 0s 1 linear forwards }
+/*Tip top: out-in four iteration animation with ease-in timing function*/
+.tip.tip--top.tip--static-stay.tip--ease-in.tip--animate-four:before { animation: animate-top-before-out-in-iterate-four 6.3s 0s 1 ease-in forwards }
+.tip.tip--top.tip--static-stay.tip--ease-in.tip--animate-four:after { animation: animate-top-after-out-in-iterate-four 6.3s 0s 1 ease-in forwards }
+/*Tip top: out-in four iteration animation with ease-in-out timing function*/
+.tip.tip--top.tip--static-stay.tip--ease-in-out.tip--animate-four:before { animation: animate-top-before-out-in-iterate-four 6.3s 0s 1 ease-in-out forwards }
+.tip.tip--top.tip--static-stay.tip--ease-in-out.tip--animate-four:after { animation: animate-top-after-out-in-iterate-four 6.3s 0s 1 ease-in-out forwards }
+/*Tip top: out-in four iteration animation with crisp timing function*/
+.tip.tip--top.tip--static-stay.tip--crisp.tip--animate-four:before { animation: animate-top-before-out-in-iterate-four 6.3s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+.tip.tip--top.tip--static-stay.tip--crisp.tip--animate-four:after { animation: animate-top-after-out-in-iterate-four 6.3s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+/*Tip top: out-in four iteration lazy animation with default/ease timing function*/
+.tip.tip--top.tip--static-stay.tip--animate-four-lazy:before, .tip.tip--top.tip--static-stay.tip--ease.tip--animate-four-lazy:before { animation: animate-top-before-out-in-iterate-four 9s 0s 1 ease forwards }
+.tip.tip--top.tip--static-stay.tip--animate-four-lazy:after, .tip.tip--top.tip--static-stay.tip--ease.tip--animate-four-lazy:after { animation: animate-top-after-out-in-iterate-four 9s 0s 1 ease forwards }
+/*Tip top: out-in four iteration lazy animation with linear timing function*/
+.tip.tip--top.tip--static-stay.tip--linear.tip--animate-four-lazy:before { animation: animate-top-before-out-in-iterate-four 9s 0s 1 linear forwards }
+.tip.tip--top.tip--static-stay.tip--linear.tip--animate-four-lazy:after { animation: animate-top-after-out-in-iterate-four 9s 0s 1 linear forwards }
+/*Tip top: out-in four iteration lazy animation with ease-in timing function*/
+.tip.tip--top.tip--static-stay.tip--ease-in.tip--animate-four-lazy:before { animation: animate-top-before-out-in-iterate-four 9s 0s 1 ease-in forwards }
+.tip.tip--top.tip--static-stay.tip--ease-in.tip--animate-four-lazy:after { animation: animate-top-after-out-in-iterate-four 9s 0s 1 ease-in forwards }
+/*Tip top: out-in four iteration lazy animation with ease-in-out timing function*/
+.tip.tip--top.tip--static-stay.tip--ease-in-out.tip--animate-four-lazy:before { animation: animate-top-before-out-in-iterate-four 9s 0s 1 ease-in-out forwards }
+.tip.tip--top.tip--static-stay.tip--ease-in-out.tip--animate-four-lazy:after { animation: animate-top-after-out-in-iterate-four 9s 0s 1 ease-in-out forwards }
+/*Tip top: out-in four iteration lazy animation with crisp timing function*/
+.tip.tip--top.tip--static-stay.tip--crisp.tip--animate-four-lazy:before { animation: animate-top-before-out-in-iterate-four 9s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+.tip.tip--top.tip--static-stay.tip--crisp.tip--animate-four-lazy:after { animation: animate-top-after-out-in-iterate-four 9s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+
+/*Tip top: in-out four iteration animation with default/ease timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four:before, .tip.tip--top.tip--static-stay.tip--in-out.tip--ease.tip--animate-four:before { animation: animate-top-before-in-out-iterate-four 6.3s 0s 1 ease forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four:after, .tip.tip--top.tip--static-stay.tip--in-out.tip--ease.tip--animate-four:after { animation: animate-top-after-in-out-iterate-four 6.3s 0s 1 ease forwards }
+/*Tip top: in-out four iteration animation with linear timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--linear.tip--animate-four:before { animation: animate-top-before-in-out-iterate-four 6.3s 0s 1 linear forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--linear.tip--animate-four:after { animation: animate-top-after-in-out-iterate-four 6.3s 0s 1 linear forwards }
+/*Tip top: in-out four iteration animation with ease-in timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four:before { animation: animate-top-before-in-out-iterate-four 6.3s 0s 1 ease-in forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four:after { animation: animate-top-after-in-out-iterate-four 6.3s 0s 1 ease-in forwards }
+/*Tip top: in-out four iteration animation with ease-in-out timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four:before { animation: animate-top-before-in-out-iterate-four 6.3s 0s 1 ease-in-out forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four:after { animation: animate-top-after-in-out-iterate-four 6.3s 0s 1 ease-in-out forwards }
+/*Tip top: in-out four iteration animation with crisp timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four:before { animation: animate-top-before-in-out-iterate-four 6.3s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four:after { animation: animate-top-after-in-out-iterate-four 6.3s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+/*Tip top: in-out four iteration lazy animation with default/ ease timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four-lazy:before, .tip.tip--top.tip--static-stay.tip--in-out.tip--ease.tip--animate-four-lazy:before { animation: animate-top-before-in-out-iterate-four 9s 0s 1 ease forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate-four-lazy:after, .tip.tip--top.tip--static-stay.tip--in-out.tip--ease.tip--animate-four-lazy:after { animation: animate-top-after-in-out-iterate-four 9s 0s 1 ease forwards }
+/*Tip top: in-out four iteration lazy animation with linear timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--linear.tip--animate-four-lazy:before { animation: animate-top-before-in-out-iterate-four 9s 0s 1 linear forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--linear.tip--animate-four-lazy:after { animation: animate-top-after-in-out-iterate-four 9s 0s 1 linear forwards }
+/*Tip top: in-out four iteration lazy animation with ease-in timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease-in.tip--animate-four-lazy:before { animation: animate-top-before-in-out-iterate-four 9s 0s 1 ease-in forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease-in.tip--animate-four-lazy:after { animation: animate-top-after-in-out-iterate-four 9s 0s 1 ease-in forwards }
+/*Tip top: in-out four iteration lazy animation with ease-in-out timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate-four-lazy:before { animation: animate-top-before-in-out-iterate-four 9s 0s 1 ease-in-out forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate-four-lazy:after { animation: animate-top-after-in-out-iterate-four 9s 0s 1 ease-in-out forwards }
+/*Tip top: in-out four iteration lazy animation with crisp timing function*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--crisp.tip--animate-four-lazy:before { animation: animate-top-before-in-out-iterate-four 9s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--crisp.tip--animate-four-lazy:after { animation: animate-top-after-in-out-iterate-four 9s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+
+/*Tip top: out-in default animations*/
+.tip.tip--top.tip--static-stay.tip--animate:before { animation: animate-top-before-out-in 1.5s ease infinite }
+.tip.tip--top.tip--static-stay.tip--animate:after { animation: animate-top-after-out-in 1.5s ease infinite }
+/*Tip top: out-in linear animation */
+.tip.tip--top.tip--static-stay.tip--linear.tip--animate:before { animation: animate-top-before-out-in 1.5s linear infinite }
+.tip.tip--top.tip--static-stay.tip--linear.tip--animate:after { animation: animate-top-after-out-in 1.5s linear infinite }
+/*Tip top: out-in ease animation */
+.tip.tip--top.tip--static-stay.tip--ease.tip--animate:before { animation: animate-top-before-out-in 1.5s ease infinite }
+.tip.tip--top.tip--static-stay.tip--ease.tip--animate:after { animation: animate-top-after-out-in 1.5s ease infinite }
+/*Tip top: out-in ease-in animation */
+.tip.tip--top.tip--static-stay.tip--ease-in.tip--animate:before { animation: animate-top-before-out-in 1.5s ease-in infinite }
+.tip.tip--top.tip--static-stay.tip--ease-in.tip--animate:after { animation: animate-top-after-out-in 1.5s ease-in infinite }
+/*Tip top: out-in ease-in-out animation */
+.tip.tip--top.tip--static-stay.tip--ease-in-out.tip--animate:before { animation: animate-top-before-out-in 1.5s ease-in-out infinite }
+.tip.tip--top.tip--static-stay.tip--ease-in-out.tip--animate:after { animation: animate-top-after-out-in 1.5s ease-in-out infinite }
+/*Tip top: out-in crisp animation */
+.tip.tip--top.tip--static-stay.tip--crisp.tip--animate:before { animation: animate-top-before-out-in 1.5s cubic-bezier(0.68,-.55,.265,1.55) infinite }
+ .tip.tip--top.tip--static-stay.tip--crisp.tip--animate:after { animation: animate-top-after-out-in 1.5s cubic-bezier(0.68,-.55,.265,1.55) infinite }
+/*Tip top: in-out default animation*/
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate:before { animation: animate-top-before-in-out 1.5s ease infinite }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--animate:after { animation: animate-top-after-in-out 1.5s ease infinite }
+/*Tip top: in-out linear animation */
+.tip.tip--top.tip--static-stay.tip--in-out.tip--linear.tip--animate:before { animation: animate-top-before-in-out 1.5s linear infinite }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--linear.tip--animate:after { animation: animate-top-after-in-out 1.5s linear infinite }
+/*Tip top: in-out ease animation */
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease.tip--animate:before { animation: animate-top-before-in-out 1.5s ease infinite }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease.tip--animate:after { animation: animate-top-after-in-out 1.5s ease infinite }
+/*Tip top: in-out ease-in animation */
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease-in.tip--animate:before { animation: animate-top-before-in-out 1.5s ease-in infinite }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease-in.tip--animate:after { animation: animate-top-after-in-out 1.5s ease-in infinite }
+/*Tip top: in-out ease-in-out animation */
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate:before { animation: animate-top-before-in-out 1.5s ease-in-out infinite }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate:after { animation: animate-top-after-in-out 1.5s ease-in-out infinite }
+/*Tip top: in-out crisp animation */
+.tip.tip--top.tip--static-stay.tip--in-out.tip--crisp.tip--animate:before { animation: animate-top-before-in-out 1.5s cubic-bezier(0.68,-.55,.265,1.55) infinite }
+.tip.tip--top.tip--static-stay.tip--in-out.tip--crisp.tip--animate:after { animation: animate-top-after-in-out 1.5s cubic-bezier(0.68,-.55,.265,1.55) infinite }
+/*
+ * Tip: bottom animation rules
+*/
+/*Tip bottom: out-in four iteration animation with default/ease timing function*/
+.tip.tip--bottom.tip--static-stay.tip--animate-four:before, .tip.tip--bottom.tip--static-stay.tip--ease.tip--animate-four:before { animation: animate-bottom-before-out-in-iterate-four 6.3s 0s 1 ease forwards }
+.tip.tip--bottom.tip--static-stay.tip--animate-four:after, .tip.tip--bottom.tip--static-stay.tip--ease.tip--animate-four:after { animation: animate-bottom-after-out-in-iterate-four 6.3s 0s 1 ease forwards }
+/*Tip bottom: out-in four iteration animation with linear timing function*/
+.tip.tip--bottom.tip--static-stay.tip--linear.tip--animate-four:before { animation: animate-bottom-before-out-in-iterate-four 6.3s 0s 1 linear forwards }
+.tip.tip--bottom.tip--static-stay.tip--linear.tip--animate-four:after { animation: animate-bottom-after-out-in-iterate-four 6.3s 0s 1 linear forwards }
+/*Tip bottom: out-in four iteration animation with ease-in timing function*/
+.tip.tip--bottom.tip--static-stay.tip--ease-in.tip--animate-four:before { animation: animate-bottom-before-out-in-iterate-four 6.3s 0s 1 ease-in forwards }
+.tip.tip--bottom.tip--static-stay.tip--ease-in.tip--animate-four:after { animation: animate-bottom-after-out-in-iterate-four 6.3s 0s 1 ease-in forwards }
+/*Tip bottom: out-in four iteration animation with ease-in-out timing function*/
+.tip.tip--bottom.tip--static-stay.tip--ease-in-out.tip--animate-four:before { animation: animate-bottom-before-out-in-iterate-four 6.3s 0s 1 ease-in-out forwards }
+.tip.tip--bottom.tip--static-stay.tip--ease-in-out.tip--animate-four:after { animation: animate-bottom-after-out-in-iterate-four 6.3s 0s 1 ease-in-out forwards }
+/*Tip bottom: out-in four iteration animation with crisp timing function*/
+.tip.tip--bottom.tip--static-stay.tip--crisp.tip--animate-four:before { animation: animate-bottom-before-out-in-iterate-four 6.3s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+.tip.tip--bottom.tip--static-stay.tip--crisp.tip--animate-four:after { animation: animate-bottom-after-out-in-iterate-four 6.3s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+/*Tip bottom: out-in lazy four iteration animation with default/easy timing function*/
+.tip.tip--bottom.tip--static-stay.tip--animate-four-lazy:before, .tip.tip--bottom.tip--static-stay.tip--ease.tip--animate-four-lazy:before { animation: animate-bottom-before-out-in-iterate-four 9s 0s 1 ease forwards }
+.tip.tip--bottom.tip--static-stay.tip--animate-four-lazy:after, .tip.tip--bottom.tip--static-stay.tip--animate-four-lazy:after { animation: animate-bottom-after-out-in-iterate-four 9s 0s 1 ease forwards }
+/*Tip bottom: out-in lazy four iteration animation with linear timing function*/
+.tip.tip--bottom.tip--static-stay.tip--linear.tip--animate-four-lazy:before { animation: animate-bottom-before-out-in-iterate-four 9s 0s 1 linear forwards }
+.tip.tip--bottom.tip--static-stay.tip--linear.tip--animate-four-lazy:after { animation: animate-bottom-after-out-in-iterate-four 9s 0s 1 linear forwards }
+/*Tip bottom: out-in lazy four iteration animation with ease-in timing function*/
+.tip.tip--bottom.tip--static-stay.tip--ease-in.tip--animate-four-lazy:before { animation: animate-bottom-before-out-in-iterate-four 9s 0s 1 ease-in forwards }
+.tip.tip--bottom.tip--static-stay.tip--ease-in.tip--animate-four-lazy:after { animation: animate-bottom-after-out-in-iterate-four 9s 0s 1 ease-in forwards }
+/*Tip bottom: out-in lazy four iteration animation with ease-in-out timing function*/
+.tip.tip--bottom.tip--static-stay.tip--ease-in-out.tip--animate-four-lazy:before { animation: animate-bottom-before-out-in-iterate-four 9s 0s 1 ease-in-out forwards }
+.tip.tip--bottom.tip--static-stay.tip--ease-in-out.tip--animate-four-lazy:after { animation: animate-bottom-after-out-in-iterate-four 9s 0s 1 ease-in-out forwards }
+/*Tip bottom: out-in lazy four iteration animation with crisp timing function*/
+.tip.tip--bottom.tip--static-stay.tip--crisp.tip--animate-four-lazy:before { animation: animate-bottom-before-out-in-iterate-four 9s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+.tip.tip--bottom.tip--static-stay.tip--crisp.tip--animate-four-lazy:after { animation: animate-bottom-after-out-in-iterate-four 9s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+
+/*Tip bottom: in-out four iteration with default/ease timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--animate-four:before, .tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease.tip--animate-four:before { animation: animate-bottom-before-in-out-iterate-four 6.3s 0s 1 ease forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--animate-four:after, .tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease.tip--animate-four:after { animation: animate-bottom-after-in-out-iterate-four 6.3s 0s 1 ease forwards }
+/*Tip bottom: in-out four iteration with linear timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--linear.tip--animate-four:before { animation: animate-bottom-before-in-out-iterate-four 6.3s 0s 1 linear forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--linear.tip--animate-four:after { animation: animate-bottom-after-in-out-iterate-four 6.3s 0s 1 linear forwards }
+/*Tip bottom: in-out four iteration with ease-in timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in.tip--animate-four:before { animation: animate-bottom-before-in-out-iterate-four 6.3s 0s 1 ease-in forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in.tip--animate-four:after { animation: animate-bottom-after-in-out-iterate-four 6.3s 0s 1 ease-in forwards }
+/*Tip bottom: in-out four iteration with ease-in-out timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate-four:before { animation: animate-bottom-before-in-out-iterate-four 6.3s 0s 1 ease-in-out forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate-four:after { animation: animate-bottom-after-in-out-iterate-four 6.3s 0s 1 ease-in-out forwards }
+/*Tip bottom: in-out four iteration with crisp timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--crisp.tip--animate-four:before { animation: animate-bottom-before-in-out-iterate-four 6.3s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--crisp.tip--animate-four:after { animation: animate-bottom-after-in-out-iterate-four 6.3s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+/*Tip bottom: in-out lazy four iteration with default/ease timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--animate-four-lazy:before, .tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease.tip--animate-four-lazy:before { animation: animate-bottom-before-in-out-iterate-four 9s 0s 1 ease forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--animate-four-lazy:after, .tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease.tip--animate-four-lazy:after { animation: animate-bottom-after-in-out-iterate-four 9s 0s 1 ease forwards }
+/*Tip bottom: in-out lazy four iteration with linear timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--linear.tip--animate-four-lazy:before { animation: animate-bottom-before-in-out-iterate-four 9s 0s 1 linear forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--linear.tip--animate-four-lazy:after { animation: animate-bottom-after-in-out-iterate-four 9s 0s 1 linear forwards }
+/*Tip bottom: in-out lazy four iteration with ease-in timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in.tip--animate-four-lazy:before { animation: animate-bottom-before-in-out-iterate-four 9s 0s 1 ease-in forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in.tip--animate-four-lazy:after { animation: animate-bottom-after-in-out-iterate-four 9s 0s 1 ease-in forwards }
+/*Tip bottom: in-out lazy four iteration with ease-in-out timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate-four-lazy:before { animation: animate-bottom-before-in-out-iterate-four 9s 0s 1 ease-in-out forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate-four-lazy:after { animation: animate-bottom-after-in-out-iterate-four 9s 0s 1 ease-in-out forwards }
+/*Tip bottom: in-out lazy four iteration with crisp timing function*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--crisp.tip--animate-four-lazy:before { animation: animate-bottom-before-in-out-iterate-four 9s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--crisp.tip--animate-four-lazy:after { animation: animate-bottom-after-in-out-iterate-four 9s 0s 1 cubic-bezier(0.68,-.55,.265,1.55) forwards }
+
+/*Tip bottom: out-in default animation*/
+.tip.tip--bottom.tip--static-stay.tip--animate:before { animation: animate-bottom-before-out-in 1.5s ease infinite }
+.tip.tip--bottom.tip--static-stay.tip--animate:after { animation: animate-bottom-after-out-in 1.5s ease infinite }
+/*Tip bottom: out-in linear animation */
+.tip.tip--bottom.tip--static-stay.tip--linear.tip--animate:before { animation: animate-bottom-before-out-in 1.5s linear infinite }
+.tip.tip--bottom.tip--static-stay.tip--linear.tip--animate:after { animation: animate-bottom-after-out-in 1.5s linear infinite }
+/*Tip bottom: out-in ease animation */
+.tip.tip--bottom.tip--static-stay.tip--ease.tip--animate:before { animation: animate-bottom-before-out-in 1.5s ease infinite }
+.tip.tip--bottom.tip--static-stay.tip--ease.tip--animate:after { animation: animate-bottom-after-out-in 1.5s ease infinite }
+/*Tip bottom: out-in ease-in animation */
+.tip.tip--bottom.tip--static-stay.tip--ease-in.tip--animate:before { animation: animate-bottom-before-out-in 1.5s ease-in infinite }
+.tip.tip--bottom.tip--static-stay.tip--ease-in.tip--animate:after { animation: animate-bottom-after-out-in 1.5s ease-in infinite }
+/*Tip bottom: out-in ease-in-out animation */
+.tip.tip--bottom.tip--static-stay.tip--ease-in-out.tip--animate:before { animation: animate-bottom-before-out-in 1.5s ease-in-out infinite }
+.tip.tip--bottom.tip--static-stay.tip--ease-in-out.tip--animate:after { animation: animate-bottom-after-out-in 1.5s ease-in-out infinite }
+/*Tip bottom: out-in crisp animation */
+.tip.tip--bottom.tip--static-stay.tip--crisp.tip--animate:before { animation: animate-bottom-before-out-in 1.5s cubic-bezier(0.68,-.55,.265,1.55) infinite }
+.tip.tip--bottom.tip--static-stay.tip--crisp.tip--animate:after { animation: animate-bottom-after-out-in 1.5s cubic-bezier(0.68,-.55,.265,1.55) infinite }
+/*Tip bottom: in-out default animation*/
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--animate:before { animation: animate-bottom-before-in-out 1.5s ease infinite }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--animate:after { animation: animate-bottom-after-in-out 1.5s ease infinite }
+/*Tip bottom: in-out linear animation */
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--linear.tip--animate:before { animation: animate-bottom-before-in-out 1.5s linear infinite }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--linear.tip--animate:after { animation: animate-bottom-after-in-out 1.5s linear infinite }
+/*Tip bottom: in-out ease animation */
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease.tip--animate:before { animation: animate-bottom-before-in-out 1.5s ease infinite }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease.tip--animate:after { animation: animate-bottom-after-in-out 1.5s ease infinite }
+/*Tip bottom: in-out ease-in animation */
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in.tip--animate:before { animation: animate-bottom-before-in-out 1.5s ease-in infinite }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in.tip--animate:after { animation: animate-bottom-after-in-out 1.5s ease-in infinite }
+/*Tip bottom: in-out ease-in-out animation */
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate:before { animation: animate-bottom-before-in-out 1.5s ease-in-out infinite }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--ease-in-out.tip--animate:after { animation: animate-bottom-after-in-out 1.5s ease-in-out infinite }
+/*Tip bottom: in-out crisp animation */
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--crisp.tip--animate:before { animation: animate-bottom-before-in-out 1.5s cubic-bezier(0.68,-.55,.265,1.55) infinite }
+.tip.tip--bottom.tip--static-stay.tip--in-out.tip--crisp.tip--animate:after { animation: animate-bottom-after-in-out 1.5s cubic-bezier(0.68,-.55,.265,1.55) infinite }
