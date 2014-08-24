@@ -1,4 +1,4 @@
-tip.css
+Tip.css
 =======
 
 A powerful CSS3 tooltip library.
