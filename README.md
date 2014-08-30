@@ -1,6 +1,8 @@
 Tip.css
 =======
 
-A powerful CSS3 tooltip library.
+A powerful CSS3 tooltip library
 
-Documentation Coming soon...
+Website: http://zahinize.github.io/tip.css/
+
+<i>Documentation Coming soon...</i>
