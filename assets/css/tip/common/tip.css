@@ -1,0 +1,198 @@
+/*
+ * tip.css - A powerful css tooltip library
+ * @Author Zahin Omar Alwa (https://twitter.com/zahinize)
+ * A Creative Commons Licence
+*/
+/*Tip: Basic tip structure*/
+.tip { position:relative }
+.tip:after,
+.tip:before {
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  text-decoration: none!important;
+  text-shadow: none!important;
+  transition: opacity .5s ease,visibility .5s ease,top .5s ease,left .5s ease,bottom .5s ease,right .5s ease;
+  visibility: hidden;
+  z-index: 10000!important;
+  -moz-transition: opacity .5s ease,visibility .5s ease,top .5s ease,left .5s ease,bottom .5s ease,right .5s ease;
+  -o-transition: opacity .5s ease,visibility .5s ease,top .5s ease,left .5s ease,bottom .5s ease,right .5s ease;
+  -webkit-transition: opacity .5s ease,visibility .5s ease,top .5s ease,left .5s ease,bottom .5s ease,right .5s ease 
+}
+.tip:before {
+  background: #000;
+  box-shadow: 0 2px 3px rgba(0,0,0,.7);
+  color: #fff;
+  content: attr(data-tip);
+  font: 400 13px/1.2 normal Helvetica,Arial,sans-serif;
+  overflow-wrap: break-word;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  text-stroke: none;
+  white-space: nowrap;
+  word-wrap: break-word;
+  -webkt-text-stroke: none
+}
+.tip:after {
+  border-width: 7px;
+  border-style: solid;
+  border-color: #000 transparent transparent
+}
+.tip:hover:after,
+.tip:hover:before {
+  opacity: 1;
+  visibility: visible
+}
+/*Tip: tip offsets generic rules*/
+.tip--bottom:after,
+.tip--bottom:before,
+.tip--top:after,
+.tip--top:before { left: 40% }
+.tip--bottom:after,
+.tip--top:after { margin: 0 0 0 5px }
+.tip--top:before { top: -60px }
+.tip--top:after { top: -32px }
+.tip--top:hover:before { top: -38px }
+.tip--top:hover:after { top:-10px }
+.tip--bottom:before { bottom:-60px }
+.tip--bottom:after { 
+  border-color:transparent transparent #000;
+  bottom:-32px
+}
+.tip--bottom:hover:before { bottom:-38px }
+.tip--bottom:hover:after { bottom:-10px }
+/*Tip: Transitions*/
+.tip--linear:after,
+.tip--linear:before {
+  transition: opacity .5s linear,visibility .5s linear,top .5s linear,left .5s linear,bottom .5s linear,right .5s linear;
+  -moz-transition: opacity .5s linear,visibility .5s linear,top .5s linear,left .5s linear,bottom .5s linear,right .5s linear;
+  -o-transition: opacity .5s linear,visibility .5s linear,top .5s linear,left .5s linear,bottom .5s linear,right .5s linear;
+  -webkit-transition: opacity .5s linear,visibility .5s linear,top .5s linear,left .5s linear,bottom .5s linear,right .5s linear
+}
+.tip--ease:after,
+.tip--ease:before {
+  transition: opacity .5s ease,visibility .5s ease,top .5s ease,left .5s ease,bottom .5s ease,right .5s ease;
+  -moz-transition: opacity .5s ease,visibility .5s ease,top .5s ease,left .5s ease,bottom .5s ease,right .5s ease;
+  -o-transition: opacity .5s ease,visibility .5s ease,top .5s ease,left .5s ease,bottom .5s ease,right .5s ease;
+  -webkit-transition: opacity .5s ease,visibility .5s ease,top .5s ease,left .5s ease,bottom .5s ease,right .5s ease
+}
+.tip--ease-in:after,
+.tip--ease-in:before {
+  transition: opacity .5s ease-in,visibility .5s ease-in,top .5s ease-in,left .5s ease-in,bottom .5s ease-in,right .5s ease-in;
+  -moz-transition: opacity .5s ease-in,visibility .5s ease-in,top .5s ease-in,left .5s ease-in,bottom .5s ease-in,right .5s ease-in;
+  -o-transition: opacity .5s ease-in,visibility .5s ease-in,top .5s ease-in,left .5s ease-in,bottom .5s ease-in,right .5s ease-in;
+  -webkit-transition: opacity .5s ease-in,visibility .5s ease-in,top .5s ease-in,left .5s ease-in,bottom .5s ease-in,right .5s ease-in
+}
+.tip--ease-in-out:after,
+.tip--ease-in-out:before {
+  transition: opacity .5s ease-in-out,visibility .5s ease-in-out,top .5s ease-in-out,left .5s ease-in-out,bottom .5s ease-in-out,right .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out,visibility .5s ease-in-out,top .5s ease-in-out,left .5s ease-in-out,bottom .5s ease-in-out,right .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out,visibility .5s ease-in-out,top .5s ease-in-out,left .5s ease-in-out,bottom .5s ease-in-out,right .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out,visibility .5s ease-in-out,top .5s ease-in-out,left .5s ease-in-out,bottom .5s ease-in-out,right .5s ease-in-out
+}
+.tip--crisp:after,
+.tip--crisp:before {
+  transition: opacity .5s cubic-bezier(0.68,-.55,.265,1.55),visibility .5s cubic-bezier(0.68,-.55,.265,1.55),top .5s cubic-bezier(0.68,-.55,.265,1.55),left .5s cubic-bezier(0.68,-.55,.265,1.55),bottom .5s cubic-bezier(0.68,-.55,.265,1.55),right .5s cubic-bezier(0.68,-.55,.265,1.55);
+  -moz-transition: opacity .5s cubic-bezier(0.68,-.55,.265,1.55),visibility .5s cubic-bezier(0.68,-.55,.265,1.55),top .5s cubic-bezier(0.68,-.55,.265,1.55),left .5s cubic-bezier(0.68,-.55,.265,1.55),bottom .5s cubic-bezier(0.68,-.55,.265,1.55),right .5s cubic-bezier(0.68,-.55,.265,1.55);
+  -o-transition: opacity .5s cubic-bezier(0.68,-.55,.265,1.55),visibility .5s cubic-bezier(0.68,-.55,.265,1.55),top .5s cubic-bezier(0.68,-.55,.265,1.55),left .5s cubic-bezier(0.68,-.55,.265,1.55),bottom .5s cubic-bezier(0.68,-.55,.265,1.55),right .5s cubic-bezier(0.68,-.55,.265,1.55);
+  -webkit-transition: opacity .5s cubic-bezier(0.68,-.55,.265,1.55),visibility .5s cubic-bezier(0.68,-.55,.265,1.55),top .5s cubic-bezier(0.68,-.55,.265,1.55),left .5s cubic-bezier(0.68,-.55,.265,1.55),bottom .5s cubic-bezier(0.68,-.55,.265,1.55),right .5s cubic-bezier(0.68,-.55,.265,1.55)}
+/*Tip: In Out tips*/
+.tip--in-out.tip--top:before { top: -38px }
+.tip--in-out.tip--top:after { top: -10px }
+.tip--in-out.tip--top:hover:before { top: -50px }
+.tip--in-out.tip--top:hover:after { top: -22px }
+.tip--in-out.tip--bottom:before { bottom: -38px }
+.tip--in-out.tip--bottom:after {
+  border-color: transparent transparent #000;
+  bottom: -10px
+}
+.tip--in-out.tip--bottom:hover:before { bottom: -50px }
+.tip--in-out.tip--bottom:hover:after { bottom: -22px }
+.tip--protip:before {
+  background: #7e6d42;
+  box-shadow: 0 2px 3px rgba(126,109,66,.7)
+}
+/*Tip: Static tips*/
+.tip--static.tip--top:before, .tip--static-stay.tip--top:before,
+.tip--in-out.tip--static.tip--top:hover:before, .tip--static-stay.tip--top:hover:before { top:-38px }
+.tip--static.tip--top:after, .tip--static-stay.tip--top:after,
+.tip--in-out.tip--static.tip--top:hover:after, .tip--static-stay.tip--top:hover:after { top:-10px }
+.tip--static.tip--bottom:before, .tip--static-stay.tip--bottom:before,
+.tip--in-out.tip--static.tip--bottom:hover:before, .tip--static-stay.tip--bottom:hover:before { bottom:-38px }
+.tip--static.tip--bottom:after, .tip--static-stay.tip--bottom:after,
+.tip--in-out.tip--static.tip--bottom:hover:after, .tip--static-stay.tip--bottom:hover:after { bottom:-10px }
+.tip--static-stay.tip:after,
+.tip--static-stay.tip:before {
+  opacity: 1;
+  visibility: visible
+}
+/*Tip: Protip*/
+.tip--protip.tip--top:after { border-color: #7e6d42 transparent transparent }
+.tip--protip.tip--bottom:after { border-color:transparent transparent #7e6d42 }
+/*Tip: Error*/
+.tip--error:before {
+  background: #bb3e3e;
+  box-shadow: 0 2px 3px rgba(187,62,62,.7)
+}
+.tip--error.tip--top:after { border-color: #bb3e3e transparent transparent }
+.tip--error.tip--bottom:after { border-color:transparent transparent #bb3e3e }
+/*Tip: Info*/
+.tip--info:before {
+  background: #00617f;
+  box-shadow: 0 2px 3px rgba(0,97,127,.7)
+}
+.tip--info.tip--top:after { border-color: #00617f transparent transparent }
+.tip--info.tip--bottom:after { border-color: transparent transparent #00617f }
+/*Tip: Warning*/
+.tip--warning:before {
+  background: #cd9239;
+  box-shadow: 0 2px 3px rgba(205,146,57,.7)
+}
+.tip--warning.tip--top:after { border-color: #cd9239 transparent transparent }
+.tip--warning.tip--bottom:after { border-color: transparent transparent #cd9239 }
+/*Tip: Success*/
+.tip--success:before {
+  background: #248f24;
+  box-shadow: 0 2px 3px rgba(36,143,36,.7)
+}
+.tip--success.tip--top:after { border-color: #248f24 transparent transparent }
+.tip--success.tip--bottom:after { border-color: transparent transparent #248f24 }
+/*Tip: Peace*/
+.tip--peace:before {
+  background: #eee;
+  box-shadow: 0 2px 3px rgba(243,243,243,.7);
+  color: #000
+}
+.tip--peace.tip--top:after { border-color: #eee transparent transparent }
+.tip--peace.tip--bottom:after { border-color: transparent transparent #eee }
+/*Speech Bubble*/
+.tip--top.tip--speech-bubble:after { border-color: #000 transparent transparent #000 }
+.tip--bottom.tip--speech-bubble:after { border-color: transparent transparent #000 #000 }
+.tip--top.tip--speech-bubble:before,.tip--bottom.tip--speech-bubble:before { padding: 8px }
+/*Tip: Protip speech bubble*/
+.tip--protip.tip--top.tip--speech-bubble:after { border-color: #7e6d42 transparent transparent #7e6d42 }
+.tip--protip.tip--bottom.tip--speech-bubble:after { border-color: transparent transparent #7e6d42 #7e6d42 }
+/*Tip: Error speech bubble*/
+.tip--error.tip--top.tip--speech-bubble:after { border-color: #bb3e3e transparent transparent #bb3e3e }
+.tip--error.tip--bottom.tip--speech-bubble:after { border-color: transparent transparent #bb3e3e #bb3e3e }
+/*Tip: Info speech bubble*/
+.tip--info.tip--top.tip--speech-bubble:after { border-color: #00617f transparent transparent #00617f }
+.tip--info.tip--bottom.tip--speech-bubble:after { border-color: transparent transparent #00617f #00617f }
+/*Tip: Warning speech bubble*/
+.tip--warning.tip--top.tip--speech-bubble:after { border-color: #cd9239 transparent transparent #cd9239 }
+.tip--warning.tip--bottom.tip--speech-bubble:after { border-color: transparent transparent #cd9239 #cd9239 }
+/*Tip: Success speech bubble*/
+.tip--success.tip--top.tip--speech-bubble:after { border-color: #248f24 transparent transparent #248f24 }
+.tip--success.tip--bottom.tip--speech-bubble:after { border-color: transparent transparent #248f24 #248f24 }
+/*Tip: Peace speech bubble*/
+.tip--peace.tip--top.tip--speech-bubble:after { border-color: #eee transparent transparent #eee }
+.tip--peace.tip--bottom.tip--speech-bubble:after { border-color: transparent transparent #eee #eee }
+/*Tip: Fancy tip*/
+.tip--fancy.tip--top:after, .tip--fancy.tip--bottom:after { margin: 0 }
+.tip--fancy.tip--top.tip--round:after, .tip--fancy.tip--bottom.tip--round:after { margin: 0 0 0 2px }
+/*Tip: Utility rules*/
+.tip--round:before{ border-radius: 5px }
+.tip--shadow-no:before { box-shadow: none }
+.tip--font-bold:before { font-weight: bold }

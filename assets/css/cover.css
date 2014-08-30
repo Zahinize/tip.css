@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "lato-light";
+  src: url(../fonts/lato-light.ttf)
+}
+@font-face {
+  font-family: "lobster";
+  src: url(../fonts/lobster.ttf)
+}
+
+/*Generic animation keyframes*/
+@keyframes ease-out-scale {
+  0% {
+    opacity: 0;
+    transform: scale(0)
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    opacity: 0;
+    transform: translate(0, -40%)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translate(-40%, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translate(0, 40%)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translate(40%, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
+
+a {
+  text-shadow: none
+}
+a:focus,
+a:hover {
+  background-color: transparent !important;
+  border-bottom-color: #a9a9a9 !important;
+  text-decoration: none
+}
+/*Custom utility classes*/
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  text-shadow: none
+}
+.hlight {
+  border: 0;
+  border-bottom: 1px dotted #888;
+  font-weight: bold;
+  padding: 0 0 4px 0;
+}
+.bold {
+  font-family: "lobster", sans-serif
+}
+.github-ribbon {
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0
+}
+
+html,
+body {
+  font-family: "lato-light", sans-serif;
+  height: 100%;
+  outline: 0 none
+}
+body {
+  color: #24454c;
+  text-align: center
+}
+
+.site-wrapper {
+  background: linear-gradient(#9de6fd, #fff0b5);
+  box-shadow: 0 0 100px #bbb inset;
+  min-height: 100%;
+  min-width: 680px;
+  vertical-align: top;
+  width: 100%;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inner {
+  padding: 30px;
+}
+
+.masthead-brand,
+.cover-heading {
+  font: 500 4rem/1.1 "lobster", sans-serif;
+  text-shadow: 1px 1px 0 #222
+}
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  border-bottom: 2px solid transparent;
+  font: normal 20px/1.1 "Lobster", sans-serif;
+  padding-left: 0;
+  padding-right: 0
+}
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.mastfoot {
+  text-shadow: none
+}
+.mastfoot .inner p {
+  font-size: 2rem
+}
+.mastfoot .glyphicon {
+  color: rgb(217, 83, 79);
+  font-size: 25px
+}
+/*Overriding bootstrap rules*/
+.thumbnail {
+  box-shadow: inset 0 0 10px #eee;
+  height: 150px;
+  position: relative;
+  width: 150px
+}
+.thumbnail:hover {
+  background: #fff !important
+}
+.thumbnail .demo {
+  background: #fafafa;
+  box-shadow: 0 0 3px #aaa;
+  bottom: 0;
+  height: 25px;
+  left: 0;
+  line-height: 1.7em;
+  margin: auto;
+  max-width: 90%;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 60%
+}
+.btn-toolbar .btn-group {
+  float: none
+}
+.lead {
+  font-size: 2.5rem
+}
+.cover-container .inner .col-xs-6 {
+	width: 25%
+}
+.anim {
+  opacity: 0
+}
+.anim-1 {
+  animation: slide-in-left 0.4s 0.4s 1 ease-in-out forwards
+}
+.anim-2 {
+  animation: slide-in-top 0.4s 0.8s 1 ease-in-out forwards
+}
+.anim-3 {
+  animation: slide-in-top 0.4s 1.2s 1 ease-in-out forwards
+}
+.anim-4 {
+  animation: slide-in-bottom 0.4s 1.6s 1 ease-in-out forwards
+}
+.anim-5 {
+  animation: slide-in-top 0.4s 2s 1 ease-in-out forwards
+}
+.anim-6 {
+  animation: slide-in-bottom 0.4s 2.4s 1 ease-in-out forwards
+}
+.anim-7 {
+  animation: slide-in-left 0.4s 2.8s 1 ease-in-out forwards
+}
+.anim-8 {
+  animation: slide-in-right 0.4s 3.2s 1 ease-in-out forwards
+}
+.anim-9 {
+  animation: slide-in-left 0.4s 3.6s 1 ease-in-out forwards
+}
+.anim-10 {
+  animation: slide-in-right 0.4s 4s 1 ease-in-out forwards
+}
+.anim-11 {
+  animation: ease-out-scale 0.4s 4.4s 1 ease-in-out forwards
+}
+.anim-12 {
+  animation: slide-in-left 0.4s 4.8s 1 ease-in-out forwards
+}
+.anim-13 {
+  animation: slide-in-right 0.4s 5.2s 1 ease-in-out forwards
+}
+.anim-14 {
+  animation: slide-in-left 0.4s 5.6s 1 ease-in-out forwards
+}
+.anim-15 {
+  animation: slide-in-right 0.4s 6s 1 ease-in-out forwards
+}
+.anim-16 {
+  animation: slide-in-bottom 0.4s 6.4s 1 ease-in-out forwards
+}
+.anim-17 {
+  animation: slide-in-top 0.4s 6.8s 1 ease-in-out forwards
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+  .cover-container > .masthead,
+  .cover-container > .inner {
+    margin: 0 0 3.1rem 0
+  }
+}
+@media (max-width: 700px) {
+  .github-ribbon {
+    display: none
+  }
+}
