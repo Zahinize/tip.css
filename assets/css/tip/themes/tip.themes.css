@@ -1,7 +1,7 @@
 /*
  * tip.themes.css - themes for tip.css
  * @Author Zahin Omar Alwa (https://twitter.com/zahinize)
- * A Creative Commons Licence
+ * MIT Licence
 */
 /*Tip: 3d theme*/
 .tip--3d:before { background: linear-gradient(to bottom, #5c6466 1%, #000 100%) }
