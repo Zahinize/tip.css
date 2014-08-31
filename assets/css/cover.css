@@ -127,6 +127,9 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.masthead-logo {
+  margin: -28px 0 0
+}
 
 .masthead-nav > li {
   display: inline-block;
@@ -263,7 +266,7 @@ body {
   }
   .cover-container > .masthead,
   .cover-container > .inner {
-    margin: 0 0 3.1rem 0
+    margin: 0 0 2.6rem 0
   }
 }
 @media (max-width: 700px) {
